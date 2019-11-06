@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="UTF-8" />
+  <title>LCA</title>
+  <link rel="stylesheet" href="stylesheet.css">
+ </head>
+ <body>
+  <div class="header">
+   <div class="header-logo"><a href="top.html">LCAdemo</a></div>
+   <div class="header-list">
+    <ul>
+     <li><a href="#lct">LCAについて</a></li>
+     <li><a href="#ensyu">演習</a></li>
+     <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="main">
+    <div class="copy-container">
+      <h1>LCA<span>.</span></h1>
+      <h2>e-learning</h2>
+    </div>
+    
+    <div class="contents">
+      <h3 class="section-title">学べる項目</h3>
+      <div class="contents-item">
+        <p><a href="lct.html">1. ライフサイクルタイム</a></p>
+      </div>
+      <div class="contents-item">
+        <p><a href="lca.html">2. ライフサイクルアセスメント</a></p>
+      </div>
+      <div class="contents-item">
+        <p><a href="exercises.html">3. 演習</a></p>
+      </div>
+    </div>
+
+    <div class="contents3">
+      <h3 class="section-title"><a name="ensyu">演習</a></h3>
+      <!--
+      <li>ユーザーの現状を入力</li>
+      <p>Q1. 一週間の買い物回数(回)：
+        <label><input type="radio" name="q1" value="1">1</label>
+        <label><input type="radio" name="q1" value="2">2</label>
+        <label><input type="radio" name="q1" value="3">3</label>
+        <label><input type="radio" name="q1" value="4">4</label>
+        <label><input type="radio" name="q1" value="5">5</label>
+        <label><input type="radio" name="q1" value="6">6</label>
+        <label><input type="radio" name="q1" value="7">7</label>
+      </p>
+      <p>Q2. 買い物で使用する袋：
+          <label><input type="radio" name="q2" value="レジ袋">レジ袋</label>
+          <label><input type="radio" name="q2" value="マイバック">マイバッグ</label>
+      </p>
+      <p>Q3. レジ袋サイズ：
+          <label><input type="radio" name="q3" value="大">大(スーパーのサイズ)</label>
+          <label><input type="radio" name="q3" value="小">小(コンビニのサイズ)</label>
+      </p>
+      <p>Q4. 一回の買い物でのレジ袋使用枚数：(枚)
+          <label><input type="radio" name="q1" value="0">0</label>
+          <label><input type="radio" name="q4" value="1">1</label>
+          <label><input type="radio" name="q4" value="2">2</label>
+          <label><input type="radio" name="q4" value="3">3</label>
+          <label><input type="radio" name="q4" value="4">4</label>
+          <label><input type="radio" name="q4" value="5">5以上</label>
+      </p>
+      <p>Q5. レジ袋繰り返し使用回数：(回)
+          <label><input type="radio" name="q5" value="0">0</label>
+          <label><input type="radio" name="q5" value="1">1</label>
+          <label><input type="radio" name="q5" value="2">2</label>
+          <label><input type="radio" name="q5" value="3">3</label>
+      </p>
+      <p>Q6. マイバッグのサイズ：
+          <label><input type="radio" name="q6" value="大">大(スーパーの買い物かご程度)</label>
+          <label><input type="radio" name="q6" value="小">小(レジ袋程度)</label>
+      </p>
+      <p>Q7. 一週間のごみ捨て回数(回)：
+          <label><input type="radio" name="q7" value="1">0</label>
+          <label><input type="radio" name="q7" value="1">1</label>
+          <label><input type="radio" name="q7" value="2">2</label>
+          <label><input type="radio" name="q7" value="3">3</label>
+          <label><input type="radio" name="q7" value="4">4</label>
+          <label><input type="radio" name="q7" value="5">5</label>
+          <label><input type="radio" name="q7" value="6">6</label>
+          <label><input type="radio" name="q7" value="7">7以上</label>
+      </p>
+      <p>Q8. ごみ袋サイズ：(L)
+          <label><input type="radio" name="q8" value="20">20</label>
+          <label><input type="radio" name="q8" value="30">30</label>
+          <label><input type="radio" name="q8" value="45">45</label>
+          <label><input type="radio" name="q8" value="70">70</label>
+          <label><input type="radio" name="q8" value="90">90</label>
+      </p>
+      <p>Q9. 1回のごみ捨てでのごみ袋使用枚数：(枚)
+          <label><input type="radio" name="q9" value="1">1</label>
+          <label><input type="radio" name="q9" value="2">2</label>
+          <label><input type="radio" name="q9" value="3">3</label>
+          <label><input type="radio" name="q9" value="4">4</label>
+      </p>
+      <input class="exercises-submit" type="submit" value="送信">
+      <br><br>
+    -->
+      <form action="output.php" method="post">
+      <dl>
+        <dt><機能単位の設定><br>1日どの程度水を飲みますか？</dt>
+          <dd>
+          <input type="text" name="ml" maxlength="4"><label for="ml">[ml]</label><br>
+          </dd>
+        <br>
+          <dt><飲料水の生産・流通><br>Q1.普段どの方法で水を飲むことが多いですか？</dt>
+          <dd>
+            <label><input type="radio" name="q10" value="0.000288">水道水</label><br>
+            <label><input type="radio" name="q10" value="0.261">国産500mlペットボトル</label><br>
+            <label><input type="radio" name="q10" value="0.484">輸入500mlペットボトル</label><br>
+            <label><input type="radio" name="q10" value="0.176">国産2000mlペットボトル</label><br>
+            <label><input type="radio" name="q10" value="0.410">輸入1500mlペットボトル</label><br>
+          </dd>
+        <br>
+          <dt><水質改善処理><br>(Q1で「水道水」を選択した方へ)<br>Q2.水質を改善するためにしていることはありますか？</dt>
+          <dd>
+            <label><input type="radio" name="q11" value="0">無処理</label><br>
+            <label><input type="radio" name="q11" value="0.128">煮沸処理</label><br>
+            <label><input type="radio" name="q11" value="0.000683">浄水器使用</label><br>
+            <label><input type="radio" name="q11" value="0.0154">冷水機使用(Q5へ)</label><br>
+          </dd>
+        <br>
+          <dt><飲料水の販売><br>(Q1で「水道水」以外を選択した方へ)<br>Q3.どのような飲料水を購入しましたか？</dt>
+            <dd>
+              <label><input type="radio" name="q12" value="0.0435">常温販売</label><br>
+              <label><input type="radio" name="q12" value="0.164">冷蔵販売</label><br>
+              <label><input type="radio" name="q12" value="0.254">自動販売機による販売</label><br>
+            </dd>
+        <br>
+          <dt><飲料水の保存><br>Q4.飲料水を冷蔵保存していますか？</dt>
+            <dd>
+              <label><input type="radio" name="q13" value="0">冷蔵保存しない</label><br>
+              <label><input type="radio" name="q13" value="0.0350">冷蔵保存する</label><br>
+            </dd>
+    　　   <dt><飲用容器の使用><br>Q5.どのような容器で水を飲むことが多いですか？</dt>
+           <dd>
+             <label><input type="radio" name="q14" value="0.000515">使用しない(Q2で「冷水器使用」を選択した方向け)</label><br>
+             <label><input type="radio" name="q14" value="4.08">ガラスコップ使用</label><br>
+             <label><input type="radio" name="q14" value="12.2">水筒使用</label><br>
+             <label><input type="radio" name="q14" value="0">ペットボトル使用</label><br>
+            </dd>
+        　 <dt><ペットボトルの処理><br>Q1.ペットボトルをどのように処理しますか？</dt>
+          <dd>
+            <label><input type="radio" name="q15" value="0">購入も使用もしていない</label><br>
+            <label><input type="radio" name="q15" value="1.80">繰り返し使用</label><br>
+            <label><input type="radio" name="q15" value="a">可燃ごみとして捨てる</label><br>
+            <label><input type="radio" name="q15" value="b">分別して捨てる</label><br>
+          </dd>
+      </dl>  
+      <input type="submit" value="送信する" />
+      </form>
+      <br>
+      <li>ここの変数を変えると、どの程度変化するのかというシミュレーション</li>
+      <li>アンケート</li>
+    </div>
+  </div>
+
+  <div class="footer">
+   <div class="footer-logo">LCA.<span>e-learning</span></div>
+    <div class="footer-list">
+     <ul>
+      <li>サイト概要</li>
+      <li>お問い合わせ</li>
+     </ul>
+    </div>
+  </div>  
+ </body>
+</html>
