@@ -37,12 +37,17 @@ body {
       text-decoration: none;
   }
 
+  hr {
+    background-color: #26d0c9;
+  }
+
   .main {
     padding: 0px 50px;
   }
-  
+
   .copy-container h1 {
     font-size: 140px;
+    margin-top: 40px;
     margin-bottom: 0px;
   }
   
@@ -51,7 +56,7 @@ body {
     font-size: 60px;
   }
   
-  .copy-container span {
+  .dotred {
     color: #ff4a4a;
   }
   
